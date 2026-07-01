@@ -10,7 +10,7 @@ float salario;
 };
 
 int main (){
-	empleados [100];
+	empleados empleados [100];
 	int n;
 	cin>>n;
 	
@@ -22,9 +22,24 @@ int main (){
 		for (int j=0; j<12; j++)
 		{
 		 cin>>empleado[i].ventas[j];
-		 
 		 }
+		cin>>empleados[i].salario;
 		}
 		
+	for (int i=0; i<n; i++)
+	{
+		cout<<"empleado"<<i+1<<endl;
+		cout<<"numero"<<empleados[i].numero<<endl;
+		cout<<"nombre"<<empleados[i].nombre<<endl;
+		cout<<"ventas";
+	
+	for ( int j=0; j<12;j++)
+	{
+		cout empleados[i].ventas[j]<<"";
 	}
+	cout<<endl;
+	cout<<"salario:"<<empleados[i].salaro<<endl;
+	}	
+	}
+	return 0;
 }
