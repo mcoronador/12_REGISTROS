@@ -10,7 +10,7 @@ struct Persona
 };
 
 int main(){
-	persona personas [100];
+	Persona personas [100];
 	int n;
 	int mayores=0;
 	int suma=0;
@@ -19,6 +19,14 @@ int main(){
 	 
 	for (int i=0;i<n;i++)
 	{
-		cin>>persona [i]
-	}
+		cin>>Persona[i].nombre;
+		cin>>Persona[i].dni;
+		cin>>Persona[i].edad;
+	
+	if (Persona[i].edad>50) {
+		mayores++;
+	} 
+	
+	 }
+	 promedio= (float)suma/n;
 }
