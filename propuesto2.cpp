@@ -19,11 +19,13 @@ int main(){
 	 
 	for (int i=0;i<n;i++)
 	{
-		cin>>Persona[i].nombre;
-		cin>>Persona[i].dni;
-		cin>>Persona[i].edad;
+		cin>>personas[i].nombre;
+		cin>>personas[i].dni;
+		cin>>personas[i].edad;
+		
+		suma = suma + personas[i].edad;
 	
-	if (Persona[i].edad>50) {
+	if (personas[i].edad>50) {
 		mayores++;
 	} 
 	
